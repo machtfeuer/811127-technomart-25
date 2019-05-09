@@ -2,7 +2,10 @@
 
 * Студент: [Виктор Петров](https://up.htmlacademy.ru/htmlcss/25/user/811127).
 * Наставник: `Ольга Вадясова`.
-
+* Аватар для моего наставника ;)
+<p align="center">
+	<img src="https://stickersvk.com/i/128/2981.png" alt="My mentor">
+</p>
 
 ---
 
