@@ -9,7 +9,10 @@
     <header class="main-header">
         <nav class="main-navigation">
             <a href="#"><img class="header-logo" src="img/logo.svg" width="108" height="18" alt="Техномарт - магазин строительных товаров"></a>
-            <span class="search-field">Поиск:</span>
+
+            <label class="icon-search">Поиск:
+                <input type="text" name="search-field" value="">
+            </label>
 
             <ul class="shop-navigation">
                 <li><a class="btn btn-bookmarks" href="#">Закладки: 0</a></li>
@@ -82,7 +85,13 @@
         <div class="container">
             <div class="half-width">
                 <a href="#"><img class="header-logo" src="img/logo.svg" width="108" height="18" alt="Техномарт - магазин строительных товаров"></a>
-                    
+
+                <address area-label="Адрес филиала точки продаж">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 
+                +7 (812) 555-05-55</address>
+            </div>
+            <!-- /.half-width -->
+
+            <div class="half-width">
                 <nav class="site-navigation site-navigation-footer">
                     <ul class="main-navigation-list">
                         <li><a href="#">Компания</a></li>
@@ -101,44 +110,70 @@
                 </nav>
                 <!-- /.footer-site-navigation -->
             </div>
+            <!-- /.half-width -->
         </div>
         <!-- /.container -->
 
-        <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 
-        +7 (812) 555-05-55</address>
-
         <div class="container">
-            <div class="footer-copyright">
-                    &copy; 2010–2019 Компания «Техномарт» <br>
-                    Все права защищены
-            </div>
+            <section class="footer-copyright">
+                    <h2>Правовая информация</h2>
+                    <p>&copy; 2010–2019 Компания «Техномарт» <br>
+                    Все права защищены</p>
+            </section>
             <!-- /.footer-copyright -->
 
-
-            <div class="footer-social-netwroks">
+            <section class="footer-social-netwroks">
+                <h2>Ссылки на социальные сети</h2>
                 <ul>
-                    <li><a class="social-link ico-vk"></a></li>
-                    <li><a class="social-link ico-fb"></a></li>
-                    <li><a class="social-link ico-instagram"></a></li>
+                    <li><a class="social-link ico-vk" href="#" area-label="Ссылка на страницу ВКонтакте"></a></li>
+                    <li><a class="social-link ico-fb" href="#" area-label="Ссылка на страницу Facebook"></a></li>
+                    <li><a class="social-link ico-instagram" href="#" area-label="Ссылка на страницу Insagram"></a></li>
                 </ul>
-            </div>
+            </section>
             <!-- /.footer-social-netwroks -->
 
-            <ul class="footer-feedback-list">
-                <li>
-                    <p>Обратая связь:</p>
-                    <p><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-                </li>
+            <section class="footer-feedback-list">
+                <h2>Обратная связь с разработчиками и администорами магазина ТЕХНОМАРТ</h2>
+                <ul>
+                    <li>
+                        <h3>Обратая связь:</h3>
+                        <p><a href="mailto:mail@htmlacademy.ru" area-label="Кнопка с почтовым адресом HTMLAcademy">mail@htmlacademy.ru</a></p>
+                    </li>
 
-                <li>
-                    <p>Разработано -</p>
-                    <p><a href="http://htmlacademy.ru">htmlacademy.ru</a></p>
-                </li>
-            </ul>
+                    <li>
+                        <h3>Разработано -</h3>
+                        <p><a href="http://htmlacademy.ru" area-label="Ссылка на официальный сайт HTMLAcademy">htmlacademy.ru</a></p>
+                    </li>
+                </ul>
+            </section>
             <!-- /.footer-feedback-list -->
         </div>
         <!-- /.container -->
     </footer>
     <!-- /.main-footer -->
+
+    <div class="modal-yandexmap">
+        <img src="img/yandex-map.png" width="300" height="158" alt="Адрес нашего офиса на интерактивной карте yandex"> 
+    </div>
+    <!-- /.modal-yandexmap -->
+
+    <div class="modal-feedback">
+        <form action="/feedback" method="post">
+            <p class="half-width">
+                <label for="name-field">Ваше имя:</label><br>   
+                <input id="name-field" type="text" name="first-last-name" placeholder="Имя Фамилия" value="">
+            </p>
+
+            <p class="half-width">
+                <label for="e-mail-field">Ваш e-mail:</label><br>
+                <input id="e-mail-field" type="text" name="e-mail" placeholder="" value="">
+            </p>
+
+            <p>
+                <input class="btn btn-red" type="submit" value="Отправить">
+            </p>
+        </form>
+    </div>
+    <!-- /.modal-feedback -->
   </body>
 </html>
