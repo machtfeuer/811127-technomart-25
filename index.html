@@ -9,10 +9,11 @@
     <header class="main-header">
         <nav class="main-navigation">
             <a href="#"><img class="header-logo" src="img/logo.svg" width="108" height="18" alt="Техномарт - магазин строительных товаров"></a>
-
-            <label class="icon-search">Поиск:
-                <input type="text" name="search-field" value="">
-            </label>
+            
+            <form action="/search" method="post">
+                <label>Поиск:</label>
+                <input type="text" class="icon-search" name="search-field" placeholder="Поиск" value="">
+            </form>
 
             <ul class="shop-navigation">
                 <li><a class="btn btn-bookmarks" href="#">Закладки: 0</a></li>
@@ -86,8 +87,8 @@
             <div class="half-width">
                 <a href="#"><img class="header-logo" src="img/logo.svg" width="108" height="18" alt="Техномарт - магазин строительных товаров"></a>
 
-                <address area-label="Адрес филиала точки продаж">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 
-                +7 (812) 555-05-55</address>
+                <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+                <p>+7 (812) 555-05-55</p>
             </div>
             <!-- /.half-width -->
 
@@ -122,12 +123,12 @@
             </section>
             <!-- /.footer-copyright -->
 
-            <section class="footer-social-netwroks">
+            <section class="social footer-social">
                 <h2 class="visually-hidden">Ссылки на социальные сети</h2>
                 <ul>
-                    <li><a class="social-link ico-vk" href="#" area-label="Ссылка на страницу ВКонтакте"></a></li>
-                    <li><a class="social-link ico-fb" href="#" area-label="Ссылка на страницу Facebook"></a></li>
-                    <li><a class="social-link ico-instagram" href="#" area-label="Ссылка на страницу Insagram"></a></li>
+                    <li><a class="social-link ico-vk" href="#" area-label="Ссылка на страницу Техномарта в ВКонтакте"></a></li>
+                    <li><a class="social-link ico-fb" href="#" area-label="Ссылка на страницу Техномарта в Facebook"></a></li>
+                    <li><a class="social-link ico-instagram" href="#" area-label="Ссылка на страницу Техномарта в Insagram"></a></li>
                 </ul>
             </section>
             <!-- /.footer-social-netwroks -->
@@ -136,13 +137,13 @@
                 <h2 class="visually-hidden">Обратная связь с разработчиками и администорами магазина ТЕХНОМАРТ</h2>
                 <ul>
                     <li>
-                        <h3>Обратая связь:</h3>
+                        <h3 class="feedback-title">Обратая связь:</h3>
                         <p><a href="mailto:mail@htmlacademy.ru" area-label="Кнопка с почтовым адресом HTMLAcademy">mail@htmlacademy.ru</a></p>
                     </li>
 
                     <li>
-                        <h3>Разработано -</h3>
-                        <p><a href="http://htmlacademy.ru" area-label="Ссылка на официальный сайт HTMLAcademy">htmlacademy.ru</a></p>
+                        <h3 class="feedback-title">Разработано -</h3>
+                        <p><a href="https://htmlacademy.ru/intensive/htmlcss" area-label="Ссылка на официальный сайт HTMLAcademy">htmlacademy.ru</a></p>
                     </li>
                 </ul>
             </section>
@@ -153,26 +154,24 @@
     <!-- /.main-footer -->
 
     <div class="modal-yandexmap">
-        <img src="img/yandex-map.png" width="300" height="158" alt="Адрес нашего офиса на интерактивной карте yandex"> 
+        <img src="img/yandex-map.png" width="300" height="158" alt="Расположения точки продаж, магазина Техномарт по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"> 
     </div>
     <!-- /.modal-yandexmap -->
 
     <div class="modal-feedback">
-        <form action="/feedback" method="post">
-            <p class="half-width">
-                <label for="name-field">Ваше имя:</label><br>   
-                <input id="name-field" type="text" name="first-last-name" placeholder="Имя Фамилия" value="">
-            </p>
+        <p class="half-width">
+            <label for="name-field">Ваше имя:</label> 
+            <input id="name-field" type="text" name="first-last-name" placeholder="Имя Фамилия" value="">
+        </p>
 
-            <p class="half-width">
-                <label for="e-mail-field">Ваш e-mail:</label><br>
-                <input id="e-mail-field" type="text" name="e-mail" placeholder="" value="">
-            </p>
+        <p class="half-width">
+            <label for="e-mail-field">Ваш e-mail:</label>
+            <input id="e-mail-field" type="text" name="e-mail" placeholder="" value="">
+        </p>
 
-            <p>
-                <input class="btn btn-red" type="submit" value="Отправить">
-            </p>
-        </form>
+        <p>
+            <button "btn btn-red">Отправить</button>
+        </p>
     </div>
     <!-- /.modal-feedback -->
   </body>

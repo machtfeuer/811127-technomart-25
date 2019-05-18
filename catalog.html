@@ -10,9 +10,10 @@
         <nav class="main-navigation">
             <a href="#"><img class="header-logo" src="img/logo.svg" width="108" height="18" alt="Техномарт - магазин строительных товаров"></a>
 
-            <label class="icon-search">Поиск:
-                <input type="text" name="search-field" value="">
-            </label>
+            <form action="/search" method="post">
+                <label>Поиск:</label>
+                <input type="text" class="icon-search" name="search-field" placeholder="Поиск" value="">
+            </form>
 
             <ul class="shop-navigation">
                 <li><a class="btn btn-bookmarks" href="#">Закладки: 0</a></li>
@@ -73,40 +74,65 @@
         <section class="catalog-filter">
             <h3>ФИЛЬТР:</h3>
             
-            <fieldset class="filter-manufacturers">
-                <legend>ПРОИЗВОДИТЕЛИ:</legend>
+            <form action="" method="post">
+                <fieldset class="filter-partition">
+                    <legend>ПРОИЗВОДИТЕЛИ:</legend>
 
-                <label>
-                    <input type="checkbox" name="manufacturer-field" value="bosch" checked> BOSCH
-                </label>
+                    <ul class="filter-list">
+                        <li>
+                            <label>
+                                <input type="checkbox" name="manufacturer-field" value="bosch" checked> BOSCH
+                            </label>
+                        </li>
 
-                <label>
-                    <input type="checkbox" name="manufacturer-field" value="interskol"> ИНТЕРСКОЛ
-                </label>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="manufacturer-field" value="interskol"> ИНТЕРСКОЛ
+                            </label>
+                        </li>
 
-                <label>
-                    <input type="checkbox" name="manufacturer-field" value="makita"> MAKITA
-                </label>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="manufacturer-field" value="makita"> MAKITA
+                            </label>
+                        </li>
 
-                <label>
-                    <input type="checkbox" name="manufacturer-field" value="dewalt"> DEWALT
-                </label>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="manufacturer-field" value="dewalt"> DEWALT
+                            </label>
+                        </li>
 
-                <label>
-                    <input type="checkbox" name="manufacturer-field" value="hitachi">HITACHI
-                </label>
-            </fieldset>
-            <!-- /.filter-manufacturers -->
+                        <li>
+                            <label>
+                                <input type="checkbox" name="manufacturer-field" value="hitachi">HITACHI
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <!-- /.filter-manufacturers -->
 
-            <fieldset class="filter-power">
-                <legend>ПИТАНИЕ:</legend>
+                <fieldset class="filter-partition">
+                    <legend>ПИТАНИЕ:</legend>
+                    
+                    <ul class="filter-list">
+                        <li>
+                            <label>
+                                <input type="radio" name="power-field" value="rechargeable" checked> АККУМУЛЯТОРНЫЕ
+                            </label>
+                        </li>
 
-                <label><input type="radio" name="power-field" value="rechargeable" checked> АККУМУЛЯТОРНЫЕ</label>
-                <label><input type="radio" name="power-field" value="network"> СЕТЕВЫЕ</label>
-            </fieldset>
-            <!-- /.filter-power -->
+                        <li>
+                            <label>
+                                <input type="radio" name="power-field" value="network"> СЕТЕВЫЕ
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <!-- /.filter-power -->
 
-            <button class="btn btn-filter-submit">ПОКАЗАТЬ</button>
+                <input type="submit" class="btn" value="ПОКАЗАТЬ">
+            </form>
         </section>
         <!-- /.catalog-filter -->
 
@@ -270,8 +296,8 @@
             <div class="half-width">
                 <a href="#"><img class="header-logo" src="img/logo.svg" width="108" height="18" alt="Техномарт - магазин строительных товаров"></a>
 
-                <address area-label="Адрес филиала точки продаж">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 
-                +7 (812) 555-05-55</address>
+                <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+                <p>+7 (812) 555-05-55</p>
             </div>
             <!-- /.half-width -->
 
@@ -306,12 +332,12 @@
             </section>
             <!-- /.footer-copyright -->
 
-            <section class="footer-social-netwroks">
+            <section class="social footer-social">
                 <h2 class="visually-hidden">Ссылки на социальные сети</h2>
                 <ul>
-                    <li><a class="social-link ico-vk" href="#" area-label="Ссылка на страницу ВКонтакте"></a></li>
-                    <li><a class="social-link ico-fb" href="#" area-label="Ссылка на страницу Facebook"></a></li>
-                    <li><a class="social-link ico-instagram" href="#" area-label="Ссылка на страницу Insagram"></a></li>
+                    <li><a class="social-link ico-vk" href="#" area-label="Ссылка на страницу Техномарта в ВКонтакте"></a></li>
+                    <li><a class="social-link ico-fb" href="#" area-label="Ссылка на страницу Техномарта в Facebook"></a></li>
+                    <li><a class="social-link ico-instagram" href="#" area-label="Ссылка на страницу Техномарта в Insagram"></a></li>
                 </ul>
             </section>
             <!-- /.footer-social-netwroks -->
@@ -326,7 +352,7 @@
 
                     <li>
                         <h3 class="feedback-title">Разработано -</h3>
-                        <p><a href="http://htmlacademy.ru" area-label="Ссылка на официальный сайт HTMLAcademy">htmlacademy.ru</a></p>
+                        <p><a href="https://htmlacademy.ru/intensive/htmlcss" area-label="Ссылка на официальный сайт HTMLAcademy">htmlacademy.ru</a></p>
                     </li>
                 </ul>
             </section>
@@ -337,7 +363,7 @@
     <!-- /.main-footer -->
 
     <div class="modal-cart-add">
-        <span class="icon-cart-add">Товар добавлен в корзину!</span>
+        <h2 class="icon-cart-add">Товар добавлен в корзину!</h2>
         <p class="half-width">
             <a class="btn btn-red" href="#">Оформить заказ</a>
         </p>
