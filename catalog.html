@@ -71,11 +71,22 @@
         <h2 class="page-title">Перфораторы</h2>
 
         <section class="catalog-filter">
-            <h3>ФИЛЬТР:</h3>
+            <h3 class="uppercase">Фильтр:</h3>
+
             
             <form action="https://echo.htmlacademy.ru" method="get">
                 <fieldset class="filter-partition">
-                    <legend>ПРОИЗВОДИТЕЛИ:</legend>
+                    <legend class="uppercase">Цена:</legend>
+
+                    <input type="range" id="price" name="price-field">
+                    <output for="price"></output>
+                    -
+                    <output for="price"></output>
+                </fieldset>
+
+
+                <fieldset class="filter-partition">
+                    <legend class="uppercase">Производители:</legend>
 
                     <ul class="filter-list">
                         <li>
@@ -109,10 +120,10 @@
                         </li>
                     </ul>
                 </fieldset>
-                <!-- /.filter-manufacturers -->
+                <!-- /.filter-partition -->
 
                 <fieldset class="filter-partition">
-                    <legend>ПИТАНИЕ:</legend>
+                    <legend class="uppercase">Питание:</legend>
                     
                     <ul class="filter-list">
                         <li>
@@ -128,7 +139,7 @@
                         </li>
                     </ul>
                 </fieldset>
-                <!-- /.filter-power -->
+                <!-- /.filter-partition -->
 
                 <input type="submit" class="btn" value="ПОКАЗАТЬ">
             </form>
@@ -137,6 +148,33 @@
 
         <section class="section-catalog">
             <h3 class="visually-hidden">Каталог перфораторов:</h3>
+
+            <ul class="sort-list">
+                <li>
+                    <span class="uppercase">Сортировка:</span>
+                </li>
+
+                <li>
+                    <a class="uppercase" href="#">По цене</a>
+                </li>
+
+                <li>
+                    <a class="uppercase" href="#">По типу</a>
+                </li>
+
+                <li>
+                    <a class="uppercase" href="#">По функционалу</a>
+                </li>
+
+                <li>
+                    <a class="sort-from-low" href="#"></a>
+                </li>
+
+                <li>
+                    <a class="sort-from-hight" href="#"></a>
+                </li>
+            </ul>
+            <!-- /.sort-list -->
 
             <ul class="catalog-list">
                 <li class="catalog-item">
@@ -293,8 +331,25 @@
                 </li>
             </ul>
             <!-- /.catalog-list -->
+
+            <ul class="paginator-list">
+                <li class="paginator-item"><a href="#">1</a></li>
+                <li class="paginator-item"><a href="#">2</a></li>
+                <li class="paginator-item"><a href="#">3</a></li>
+                <li class="paginator-item"><a href="#">Следущая</a></li>
+            </ul>
+            <!-- /.paginator-list -->
         </section>
         <!-- /.section-catalog -->
+
+        <section>
+            <header class="section-header">
+                <h2 class="section-headline uppercase">Пара слов о перфораторах</h2>
+            </header>
+            
+            <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+        </section>
     </main>
     <!-- /.container -->
 
