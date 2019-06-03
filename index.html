@@ -10,17 +10,17 @@
     <!-- Main header of all site pages -->
     <header class="main-header">
         <nav class="main-navigation">
-            <a href="#"><img class="header-logo" src="img/logo.svg" width="108" height="18" alt="Техномарт - магазин строительных товаров"></a>
+            <a href="#"><img class="header-logo" src="img/logo.png" width="220" height="47" alt="Техномарт - магазин строительных товаров"></a>
             
             <form action="https://echo.htmlacademy.ru" method="get">
                 <label class="visually-hidden">Поиск:</label>
                 <input type="text" class="icon-search" name="search-field" placeholder="Поиск" value="">
             </form>
 
-            <ul class="shop-navigation">
-                <li><a class="btn btn-bookmarks" href="#">Закладки: 0</a></li>
-                <li><a class="btn btn-cart" href="#">Корзина: 0</a></li>
-                <li><a class="btn btn-checkout" href="#">Оформить заказ</a></li>
+            <ul class="main-navigation-list">
+                <li class="main-navigation-item"><a class="btn btn-bookmarks" href="#">Закладки: 0</a></li>
+                <li class="main-navigation-item"><a class="btn btn-cart" href="#">Корзина: 0</a></li>
+                <li class="main-navigation-item"><a class="btn btn-checkout" href="#">Оформить заказ</a></li>
             </ul>
             <!-- /.shop-navigaion -->
         </nav>
@@ -45,13 +45,13 @@
 
         <nav class="site-navigation">
             <ul class="site-navigation-list">
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="#">Компания</a></li>
-                <li><a href="#">Каталог</a></li>
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Спецпредложения</a></li>
-                <li><a href="#">Доставка</a></li>
-                <li><a href="#">Клиентам</a></li>
+                <li class="site-navigation-item active"><a href="index.html">Главная</a></li>
+                <li class="site-navigation-item"><a href="#">Компания</a></li>
+                <li class="site-navigation-item"><a href="catalog.html">Каталог</a></li>
+                <li class="site-navigation-item"><a href="#">Новости</a></li>
+                <li class="site-navigation-item"><a href="#">Спецпредложения</a></li>
+                <li class="site-navigation-item"><a href="#">Доставка</a></li>
+                <li class="site-navigation-item"><a href="#">Клиентам</a></li>
             </ul>
             <!-- /.site-navigation-list -->
         </nav>
@@ -93,7 +93,7 @@
             <!-- /.features-list -->
 
             <ul class="slider-list">
-                <li class="slider-item" style="background: url(img/index-slider-drills.jpg)">
+                <li class="slider-item" style="background: url(img/index-slider-drills.jpg) no-repeat">
                     <header class="slider-header">
                         <h3 class="slider-title uppercase">Дрели</h3>
                         <p class="slider-content">Соседям на радость!</p>
@@ -101,7 +101,7 @@
                     </header>
                 </li>
 
-                <li class="slider-item" style="background: url(img/index-slider-perforators.jpg)">
+                <li class="slider-item" style="background: url(img/index-slider-perforators.jpg) no-repeat">
                     <header class="slider-header">
                         <h3 class="slider-title uppercase">Перфораторы</h3>
                         <p class="slider-content">Настоящие мужские игрушки</p>
@@ -121,7 +121,7 @@
             <ul class="catalog-list">
                 <li class="catalog-item">
                     <a href="#">
-                        <img src="img/user/catalog/perforator-bosch-bfg-9000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
+                        <img src="img/user/catalog/perforator-bosch-bfg-9000.png" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
 
                         <h3>Перфоратор BOSCH BFG 9000</h3>
 
@@ -247,7 +247,7 @@
                 
                 <li class="manufacturers-item">
                     <a href="#">
-                        <img src="img/brand-AEG" width="151" height="96" alt="Производитель AEG Power Solutions">
+                        <img src="img/brand-AEG.png" width="151" height="96" alt="Производитель AEG Power Solutions">
                     </a>
                 </li>
                 
@@ -263,7 +263,7 @@
 
         <section class="section-services">
             <header class="section-header">
-                <h2 class="section-title uppercase">Сервисы</h2>
+                <h2 class="uppercase">Сервисы</h2>
                 <p>Хороший интернет-магазин отличается от плохого не только ценами!
                 Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными</p>
             </header>
@@ -285,18 +285,21 @@
 
             <ul class="services-description-list">
                 <li class="services-description">
+                    <h3 class="uppercase">Доставка</h3>
                     <p>
                         Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!
                     </p>
                 </li>
 
                 <li class="services-description">
+                    <h3 class="uppercase">Гарантия</h3>
                     <p>
                         Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
                     </p>
                 </li>
 
                 <li class="services-description">
+                    <h3 class="uppercase">Кредит</h3>
                     <p>
                         Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь
                     </p>
@@ -339,7 +342,7 @@
     <footer class="main-footer">
         <div class="container">
             <div class="half-width">
-                <a href="#"><img class="header-logo" src="img/logo.svg" width="108" height="18" alt="Техномарт - магазин строительных товаров"></a>
+                <a href="#"><img class="header-logo" src="img/logo.png" width="220" height="47" alt="Техномарт - магазин строительных товаров"></a>
 
                 <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
                 <p>+7 (812) 555-05-55</p>
