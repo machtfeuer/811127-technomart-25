@@ -68,6 +68,14 @@ a
     text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4
+{
+    font-family: 'Corpum';
+}
+
 .visually-hidden
 {
     position: absolute;
@@ -84,18 +92,87 @@ a
     text-transform: uppercase;
 }
 
+
+/* Button decoration */
+.btn
+{
+    font-family: 'Corpum';
+
+    cursor: pointer;
+}
+
+.btn.btn-red
+{
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #fff;
+    background-color: #ee3643;
+}
+
+.btn.btn-red:hover,
+.btn.btn-red:focus
+{
+    background-color: #ca2c37;
+}
+
+.btn.btn-red:active
+{
+    background-color: #ba2732;
+}
+
+.btn.btn-green
+{
+    color: #fff;
+    background-color: #63a63e;
+}
+
+.btn.btn-green:hover,
+.btn.btn-green:focus
+{
+    background-color: #5fbb2d;
+}
+
+.btn.btn-green:active
+{
+    background-color: #518534;
+}
+
+.btn.btn-border-green
+{
+    border: 3px solid #63a63e;
+    background-color: #fff;
+}
+
+.btn.btn-border-green:hover,
+.btn.btn-border-green:focus
+{
+    color: #32425c;
+    border: 3px solid #32425c;
+}
+
+.btn.btn-border-green:active
+{
+    color: #c1c6ce;
+    border: #c1c6ce;
+}
+
+
+/* Design of main site header */
+.main-header
+{
+    font-family: 'Corpum', sans-serif;
+
+    background-color: #f3f7f8;
+}
+
+/* Website menu design */
 .main-navigation,
 .site-navigation
 {
     width: 100%;
 
     background-color: #32425c;
-}
-
-
-.main-header
-{
-    background-color: #f3f7f8;
 }
 
 .main-navigation-list,
@@ -109,51 +186,490 @@ a
 {
     color: #fff;
 }
+.site-navigation .site-navigation-item a
+{
+    font-family: inherit;
+}
 
-/* Menu hover reaction */
+/* Menu design - Reaction when you hover on the menu item */
+
 .main-navigation .main-navigation-item:hover a:hover,
 .main-navigation .main-navigation-item:focus a:focus
 {
+    color: #fff;
     background-color: #212a3a;
 }
 
 .site-navigation .site-navigation-item:hover a:hover,
 .site-navigation .site-navigation-item:focus a:focus
 {
+    color: #fff;
     background-color: #293449;
 }
 
-/* Menu active reaction */
-.main-navigation .main-navigation-item:active a:active,
+/* Menu design - Reaction of clicking on the menu item */
+.main-navigation .main-navigation-item:active a:active
+{
+    color: #babbbd;
+    background-color: #161d29;
+}
 .site-navigation .site-navigation-item:active a:active
 {
     color: #a8abaf;
-    background-color: #161d29;
+    background-color: #1d2739;
 }
 
 .site-navigation .site-navigation-item
 {
-    font: 17px / 17px 'Corpum';
+    font-size: 17px;
+    line-height: 17px;
 }
 
-/* Button decoration */
-.btn
+/* Menu design  */
+.main-header a.btn
 {
+    font-size: 17px;
+    line-height: 18px;
+
+    position: relative;
 }
 
-.btn.btn-checkout
+.btn.btn-favorites,
+.btn.btn-basket
 {
-    font: 17px / 18px 'Corpum';
+    padding-left: 27px;
+}
+
+.btn.btn-basket::before,
+.btn.btn-favorites::before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 14px;
+    height: 16px;
+
+    content: '';
+
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.btn.btn-basket::before
+{
+    background-image: url('../img/icon-basket.svg');
+}
+
+.btn.btn-favorites::before
+{
+    background-image: url('../img/icon-favorites.svg');
+}
+
+.btn.btn-cart
+{
+    padding-left: 50px;
+}
+
+.main-header a.btn.btn-checkout
+{
+    font-size: 17px;
+    line-height: 18px;
+
     background-color: #63a63e;
 }
 
-.btn.btn-checkout:hover,
-.btn.btn-checkout:focus
+.main-header a.btn.btn-checkout:hover,
+.main-header a.btn.btn-checkout:focus
 {
     background-color: #5fbb2d;
 }
 
-.btn.btn-checkout:active
+.main-header a.btn.btn-checkout:active
 {
     background-color: #518534;
+}
+
+.main-header h1
+{
+    font-size: 16px;
+    font-weight: normal;
+    font-style: italic;
+    line-height: 23px;
+
+    color: #e9292a;
+}
+
+.main-header a.btn.btn-call,
+.main-header a.btn.btn-call:hover,
+.main-header a.btn.btn-call:focus,
+.main-header a.btn.btn-call:active,
+.main-header a.btn.btn-call:visited
+{
+    color: #e9292a;
+    border: 3px solid #fff;
+    background-color: transparent;
+}
+
+.main-header address
+{
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 24px;
+
+    color: #32425c;
+}
+
+.profile-area-list
+{
+    list-style: none;
+}
+
+.main-header a.btn.btn-logon,
+.main-header a.btn.btn-registration
+{
+    font-family: inherit;
+    font-size: 21px;
+    line-height: 21px;
+
+    color: #000;
+    background-color: #fff;
+}
+
+.main-header a.btn:hover
+{
+    color: #ee3643;
+}
+
+.main-header a.btn:active
+{
+    color: #cacaca;
+}
+
+/* Styling sections 
+   Styling section - Design section "Features" */
+.section-features .features-list
+{
+    list-style: none;
+}
+
+.section-features .features-list .feature-item.bg-yellowish
+{
+    background-color: #ffbf47;
+}
+
+.section-features .features-list .feature-item.bg-blue
+{
+    background-color: #3bbce3;
+}
+
+.section-features .features-list .feature-item.bg-pink
+{
+    background-color: #dc91d8;
+}
+
+.section-features .features-list .feature-item.bg-green
+{
+    background-color: #8ed78f;
+}
+
+
+.section-features .features-list .feature-title
+{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+
+    color: #fff;
+}
+
+.section-features .feature-item .btn
+{
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #fff;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+
+.section-features .feature-item .btn:hover,
+.section-features .feature-item .btn:focus
+{
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.section-features .feature-item .btn:active
+{
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.section-features .slider-list
+{
+    list-style: none;
+}
+
+
+.section-features .slider-item .slider-title,
+.section-features .slider-item .slider-content
+{
+    font-family: 'Corpum';
+
+    color: #fff;
+}
+
+.section-features .slider-item .slider-title
+{
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 36px;
+}
+
+.section-features .slider-item .slider-content
+{
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.section-catalog-popular .section-header
+{
+    background-color: #f9f5f0;
+}
+
+.section-catalog-popular .section-title
+{
+    font-family: 'Corpum';
+    font-size: 30px;
+    line-height: 30px;
+
+    color: #32425c;
+}
+
+.section-catalog-popular .catalog-list
+{
+    list-style: none;
+}
+
+.section-catalog-popular .catalog-list .catalog-title,
+.section-catalog-popular .catalog-list .catalog-last-price,
+.section-catalog-popular .catalog-list .catalog-price
+{
+    font-family: 'PTSans';
+    font-weight: bold;
+}
+
+.section-catalog-popular .catalog-list .catalog-title
+{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 20px;
+
+    color: #000;
+}
+
+.section-catalog-popular .catalog-list .catalog-last-price
+{
+    font-size: 17px;
+    line-height: 18px;
+
+    color: #a9a9a9;;
+}
+
+.section-catalog-popular .catalog-list .catalog-price
+{
+    font-size: 17px;
+    line-height: 18px;
+
+    color: #fff;
+    background-color: #ee3643;
+}
+
+.catalog-popup .popup-buttons-list
+{
+    list-style: none;
+}
+
+.section-manufacturers .section-header
+{
+    background-color: #f9f5f0;
+}
+
+.section-manufacturers .section-title
+{
+    font-family: 'Corpum';
+    font-size: 30px;
+    line-height: 30px;
+
+    color: #32425c;
+}
+
+.section-manufacturers .manufacturers-list
+{
+    list-style: none;
+}
+
+
+.section-services
+{
+    font-family: 'PTSans';
+    font-size: 13px;
+    line-height: 24px;
+
+    background-color: #f4f8fa;
+}
+
+.services-list,
+.services-description-list
+{
+    list-style: none;
+}
+
+.services-list .service-item
+{
+    background-color: #32425c;
+}
+
+.services-list .service-item .service-title
+{
+    font-family: 'Corpum';
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 30px;
+
+    color: #fff;
+}
+
+.services-list .service-item:hover,
+.services-list .service-item:focus
+{
+    background-color: #32425c;
+}
+
+.services-list .service-item.active
+{
+    background-color: #fff;
+}
+
+.section-services .service-item.active .service-title
+{
+    color: #32425c;
+}
+
+.services-description-list .services-description
+{
+    font-family: 'PTSans';
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.services-description-list .services-subtitle
+{
+    font-family: 'Corpum';
+    font-size: 36px;
+    line-height: 36px;
+
+    color: #32425c;
+}
+
+
+.section-about
+{
+    font-family: 'PTSans';
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.section-about .section-headline
+{
+    font-family: 'Corpum';
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.main-footer
+{
+    background-color: #32425c;
+}
+
+.footer-copyright p
+{
+    font-family: 'Corpum';
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #fff;
+}
+
+.main-footer address,
+.main-footer p
+{
+    font-family: 'Corpum';
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #f3f7f9;
+}
+
+.site-navigation-footer-top-list,
+.site-navigation-footer-bottom-list
+{
+    list-style: none;
+}
+
+.site-navigation-footer-top-list navigation-item a,
+.site-navigation-footer-bottom-list navigation-item a
+{
+    font-family: 'Corpum';
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #f1f5f7;
+}
+
+.site-navigation-footer-top-list .navigation-item:hover a,
+.site-navigation-footer-top-list .navigation-item:focus a,
+.site-navigation-footer-bottom-list .navigation-item:hover a,
+.site-navigation-footer-bottom-list .navigation-item:focus a
+{
+    color: #ffd180;
+}
+
+.site-navigation-footer-bottom-list .navigation-item:hover a,
+.site-navigation-footer-bottom-list .navigation-item:focus a
+{
+    text-decoration: underline;
+}
+
+.main-footer .footer-feedback-list
+{
+    list-style: none;
+}
+
+.main-footer .footer-feedback-list .feedback-title
+{
+    font-family: 'Corpum';
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #fff;
+}
+
+.main-footer .footer-feedback-list a
+{
+    font-family: 'Corpum';
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #ffd180;
+}
+
+.main-footer .footer-feedback-list a:hover,
+.main-footer .footer-feedback-list a:focus
+{
+    text-decoration: underline;
+}
+
+.main-footer .footer-feedback-list a:active
+{
+    color: #ee3643;
 }
