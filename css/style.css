@@ -1,6 +1,6 @@
 @font-face
 {
-    font-family: 'Corpum';
+    font-family: 'Curpum';
     font-weight: normal;
     font-style: normal;
 
@@ -9,7 +9,7 @@
 
 @font-face
 {
-    font-family: 'Corpum';
+    font-family: 'Curpum';
     font-weight: bold;
     font-style: normal;
 
@@ -18,7 +18,7 @@
 
 @font-face
 {
-    font-family: 'Corpum';
+    font-family: 'Curpum';
     font-weight: normal;
     font-style: italic;
 
@@ -27,7 +27,7 @@
 
 @font-face
 {
-    font-family: 'Corpum';
+    font-family: 'Curpum';
     font-weight: bold;
     font-style: italic;
 
@@ -36,25 +36,25 @@
 
 @font-face
 {
-    font-family: 'PTSans';
+    font-family: 'PT Sans';
     font-weight: normal;
     font-style: normal;
 
-    src: url('../fonts/ptsans.woff') format('woff');
+    src: url('../fonts/PT Sans.woff') format('woff');
 }
 
 @font-face
 {
-    font-family: 'PTSans';
+    font-family: 'PT Sans';
     font-weight: bold;
     font-style: normal;
 
-    src: url('../fonts/ptsansbold.woff') format('woff');
+    src: url('../fonts/PT Sansbold.woff') format('woff');
 }
 
 body
 {
-    font: 13px / 24px 'PTSans', sans-serif;
+    font: 13px / 24px 'PT Sans', sans-serif;
 
     margin: 0;
     padding: 0;
@@ -66,14 +66,6 @@ body
 a
 {
     text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4
-{
-    font-family: 'Corpum';
 }
 
 .visually-hidden
@@ -96,7 +88,7 @@ h4
 /* Button decoration */
 .btn
 {
-    font-family: 'Corpum';
+    font-family: 'Curpum';
 
     cursor: pointer;
 }
@@ -161,7 +153,7 @@ h4
 /* Design of main site header */
 .main-header
 {
-    font-family: 'Corpum', sans-serif;
+    font-family: 'Curpum', sans-serif;
 
     background-color: #f3f7f8;
 }
@@ -413,7 +405,7 @@ h4
 .section-features .slider-item .slider-title,
 .section-features .slider-item .slider-content
 {
-    font-family: 'Corpum';
+    font-family: 'Curpum';
 
     color: #fff;
 }
@@ -438,7 +430,7 @@ h4
 
 .section-catalog-popular .section-title
 {
-    font-family: 'Corpum';
+    font-family: 'Curpum';
     font-size: 30px;
     line-height: 30px;
 
@@ -454,7 +446,7 @@ h4
 .section-catalog-popular .catalog-list .catalog-last-price,
 .section-catalog-popular .catalog-list .catalog-price
 {
-    font-family: 'PTSans';
+    font-family: 'PT Sans';
     font-weight: bold;
 }
 
@@ -496,7 +488,7 @@ h4
 
 .section-manufacturers .section-title
 {
-    font-family: 'Corpum';
+    font-family: 'Curpum';
     font-size: 30px;
     line-height: 30px;
 
@@ -511,7 +503,7 @@ h4
 
 .section-services
 {
-    font-family: 'PTSans';
+    font-family: 'PT Sans';
     font-size: 13px;
     line-height: 24px;
 
@@ -531,7 +523,7 @@ h4
 
 .services-list .service-item .service-title
 {
-    font-family: 'Corpum';
+    font-family: 'Curpum';
     font-size: 21px;
     font-weight: bold;
     line-height: 30px;
@@ -557,14 +549,14 @@ h4
 
 .services-description-list .services-description
 {
-    font-family: 'PTSans';
+    font-family: 'PT Sans';
     font-size: 13px;
     line-height: 24px;
 }
 
 .services-description-list .services-subtitle
 {
-    font-family: 'Corpum';
+    font-family: 'Curpum';
     font-size: 36px;
     line-height: 36px;
 
@@ -574,14 +566,14 @@ h4
 
 .section-about
 {
-    font-family: 'PTSans';
+    font-family: 'PT Sans';
     font-size: 13px;
     line-height: 24px;
 }
 
 .section-about .section-headline
 {
-    font-family: 'Corpum';
+    font-family: 'Curpum';
     font-size: 30px;
     line-height: 30px;
 }
@@ -593,7 +585,7 @@ h4
 
 .footer-copyright p
 {
-    font-family: 'Corpum';
+    font-family: 'Curpum';
     font-size: 16px;
     line-height: 18px;
 
@@ -603,7 +595,7 @@ h4
 .main-footer address,
 .main-footer p
 {
-    font-family: 'Corpum';
+    font-family: 'Curpum';
     font-size: 18px;
     line-height: 24px;
 
@@ -619,7 +611,7 @@ h4
 .site-navigation-footer-top-list navigation-item a,
 .site-navigation-footer-bottom-list navigation-item a
 {
-    font-family: 'Corpum';
+    font-family: 'Curpum';
     font-size: 18px;
     line-height: 24px;
 
@@ -647,7 +639,7 @@ h4
 
 .main-footer .footer-feedback-list .feedback-title
 {
-    font-family: 'Corpum';
+    font-family: 'Curpum';
     font-size: 16px;
     line-height: 18px;
 
@@ -656,7 +648,7 @@ h4
 
 .main-footer .footer-feedback-list a
 {
-    font-family: 'Corpum';
+    font-family: 'Curpum';
     font-size: 16px;
     line-height: 18px;
 
