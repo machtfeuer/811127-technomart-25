@@ -1,41 +1,41 @@
 @font-face
 {
-    font-family: 'Curpum';
+    font-family: 'Cuprum';
     font-weight: normal;
     font-style: normal;
 
-    src: url('../fonts/cuprum.woff') format('woff'),
-    url('../fonts/cuprum.woff2') format('woff2');
+    src: url('../fonts/cuprum.woff2') format('woff2'),
+    url('../fonts/cuprum.woff') format('woff');
 }
 
 @font-face
 {
-    font-family: 'Curpum';
+    font-family: 'Cuprum';
     font-weight: bold;
     font-style: normal;
 
-    src: url('../fonts/cuprumbold.woff') format('woff'),
-    url('../fonts/cuprumbold.woff2') format('woff2');
+    src: url('../fonts/cuprumbold.woff2') format('woff2'),
+    url('../fonts/cuprumbold.woff') format('woff');
 }
 
 @font-face
 {
-    font-family: 'Curpum';
+    font-family: 'Cuprum';
     font-weight: normal;
     font-style: italic;
 
-    src: url('../fonts/cuprumitalic.woff') format('woff'),
-    url('../fonts/cuprumitalic.woff2') format('woff2');
+    src: url('../fonts/cuprumitalic.woff2') format('woff2'),
+    url('../fonts/cuprumitalic.woff') format('woff');
 }
 
 @font-face
 {
-    font-family: 'Curpum';
+    font-family: 'Cuprum';
     font-weight: bold;
     font-style: italic;
 
-    src: url('../fonts/cuprumbolditalic.woff') format('woff'),
-    url('../fonts/cuprumbolditalic.woff2') format('woff2');
+    src: url('../fonts/cuprumbolditalic.woff2') format('woff2'),
+    url('../fonts/cuprumbolditalic.woff') format('woff');
 }
 
 @font-face
@@ -44,8 +44,8 @@
     font-weight: normal;
     font-style: normal;
 
-    src: url('../fonts/ptsans.woff') format('woff'),
-    url('../fonts/ptsans.woff2') format('woff2');
+    src: url('../fonts/ptsans.woff2') format('woff2'),
+    url('../fonts/ptsans.woff') format('woff');
 }
 
 @font-face
@@ -54,10 +54,12 @@
     font-weight: bold;
     font-style: normal;
 
-    src: url('../fonts/ptsansbold.woff') format('woff'),
-    url('../fonts/ptsansbold.woff2') format('woff2');
+    src: url('../fonts/ptsansbold.woff2') format('woff2'),
+    url('../fonts/ptsansbold.woff') format('woff');
 }
 
+
+/* PAGE STYLES */
 html
 {
     box-sizing: border-box;
@@ -72,7 +74,9 @@ html
 
 body
 {
-    font: 13px / 24px 'PT Sans', sans-serif;
+    font-family: 'PT Sans', 'Times New Roman', sans-serif;
+    font-size: 13px;
+    line-height: 24px;
 
     margin: 0;
     padding: 0;
@@ -103,13 +107,15 @@ a
 }
 
 
-/* Button decoration */
+/* PAGE - BUTTONS */
 .button
 {
-    font-family: Curpum, Arial;
+    font-family: Cuprum, Arial;
+
     cursor: pointer;
 }
 
+/* PAGE - BUTTONS - CALORS */
 .button-red
 {
     color: #fff;
@@ -167,10 +173,12 @@ a
     border-color: #c1c6ce;
 }
 
+/* PAGE - BUTTONS - TYPES */
+
 /* Design of main site header */
 .main-header
 {
-    font-family: 'Curpum', sans-serif;
+    font-family: 'Cuprum', sans-serif;
 
     background-color: #f3f7f8;
 }
@@ -190,8 +198,8 @@ a
     list-style: none;
 }
 
-.user-navigation-block a
 .main-navigation a,
+.user-navigation-block a
 {
     color: #fff;
 }
@@ -265,7 +273,6 @@ a
     background-repeat: no-repeat;
     background-position: left;
 }
-
 
 .button.button-basket::before
 {
@@ -357,8 +364,22 @@ a
     color: #cacaca;
 }
 
-/* Styling sections 
-   Styling section - Design section "Features" */
+/* LANDING SECTIONS */
+.landing-section .section-header
+{
+    background-color: #f9f5f0;
+}
+
+.landing-section .section-headline
+{
+    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+
+    color: #32425c;
+}
+
+/* SECTION - FEATURES */
 .section-features .features-list
 {
     list-style: none;
@@ -383,7 +404,6 @@ a
 {
     background-color: #8ed78f;
 }
-
 
 .section-features .feature-title
 {
@@ -420,24 +440,27 @@ a
     list-style: none;
 }
 
-.section-features .slider-item {
-    background-position: center;
+.section-features .slider-item
+{
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
 }
 
-.section-features .slider-item:nth-child(1) {
-    background-image: url("../img/index-slider-drills.jpg");
+.section-features .slider-item:nth-child(1)
+{
+    background-image: url('../img/index-slider-drills.jpg');
 }
 
-.section-features .slider-item:nth-child(2) {
-    background-image: url("../img/index-slider-perforators.jpg");
+.section-features .slider-item:nth-child(2)
+{
+    background-image: url('../img/index-slider-perforators.jpg');
 }
 
 .section-features .slider-item .slider-title,
 .section-features .slider-item .slider-content
 {
-    font-family: 'Curpum';
+    font-family: 'Cuprum', Arial, sans-serif;
 
     color: #fff;
 }
@@ -455,6 +478,8 @@ a
     line-height: 24px;
 }
 
+
+/* SECTION - CATALOG POPULAR */
 .section-catalog-popular .section-header
 {
     background-color: #f9f5f0;
@@ -462,7 +487,7 @@ a
 
 .section-catalog-popular .section-title
 {
-    font-family: 'Curpum';
+    font-family: 'Cuprum', Arial, sans-serif;
     font-size: 30px;
     line-height: 30px;
 
@@ -520,7 +545,7 @@ a
 
 .section-manufacturers .section-title
 {
-    font-family: 'Curpum';
+    font-family: 'Cuprum', Arial, sans-serif;
     font-size: 30px;
     line-height: 30px;
 
@@ -532,7 +557,7 @@ a
     list-style: none;
 }
 
-
+/* SECTION - SERVICES */
 .section-services
 {
     font-family: 'PT Sans';
@@ -555,7 +580,7 @@ a
 
 .services-list .service-item .service-title
 {
-    font-family: 'Curpum';
+    font-family: 'Cuprum', Arial, sans-serif;
     font-size: 21px;
     font-weight: bold;
     line-height: 30px;
@@ -588,14 +613,14 @@ a
 
 .services-description-list .services-subtitle
 {
-    font-family: 'Curpum';
+    font-family: 'Cuprum', Arial, sans-serif;
     font-size: 36px;
     line-height: 36px;
 
     color: #32425c;
 }
 
-
+/* SECTION - ABOUT */
 .section-about
 {
     font-family: 'PT Sans';
@@ -603,97 +628,125 @@ a
     line-height: 24px;
 }
 
-.section-about .section-headline
-{
-    font-family: 'Curpum';
-    font-size: 30px;
-    line-height: 30px;
-}
 
+/* MAIN FOOTER */
 .main-footer
 {
     background-color: #32425c;
 }
 
+/* MAIN FOOTER - COPYRIGHTS */
 .footer-copyright p
 {
-    font-family: 'Curpum';
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 16px;
     line-height: 18px;
 
     color: #fff;
 }
 
+/* MAIN FOOTER - CONTACTS */
 .main-footer address,
 .main-footer p
 {
-    font-family: 'Curpum';
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 18px;
+    font-style: normal;
     line-height: 24px;
 
     color: #f3f7f9;
 }
 
-.site-navigation-footer-top-list,
-.site-navigation-footer-bottom-list
+/* MAIN FOOTER - FOOTER NAVIGATION */
+.footer-navigation-top,
+.footer-navigation-bottom
 {
+    margin: 0;
+    padding: 0;
+
     list-style: none;
 }
 
-.site-navigation-footer-top-list .navigation-item a,
-.site-navigation-footer-bottom-list .navigation-item a
+.footer-navigation-top a,
+.footer-navigation-bottom a
 {
-    font-family: 'Curpum';
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 18px;
     line-height: 24px;
 
     color: #f1f5f7;
 }
 
-.site-navigation-footer-top-list .navigation-item:hover a,
-.site-navigation-footer-top-list .navigation-item:focus a,
-.site-navigation-footer-bottom-list .navigation-item:hover a,
-.site-navigation-footer-bottom-list .navigation-item:focus a
+.footer-navigation-top a:hover,
+.footer-navigation-top a:focus,
+.footer-navigation-bottom a:hover,
+.footer-navigation-bottom a:focus
 {
     color: #ffd180;
 }
 
-.site-navigation-footer-bottom-list .navigation-item:hover a,
-.site-navigation-footer-bottom-list .navigation-item:focus a
+.footer-navigation-bottom a:hover,
+.footer-navigation-bottom a:focus
 {
     text-decoration: underline;
 }
 
-.main-footer .footer-feedback-list
+/* MAIN FOOTER - SOCIAL */
+.footer-social .social-list
 {
+    margin: 0;
+    padding: 0;
+
     list-style: none;
 }
 
-.main-footer .footer-feedback-list .feedback-title
+
+/* MAIN FOOTER - FOOTER FEEDBACK */
+.footer-feedback-list
 {
-    font-family: 'Curpum';
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.footer-feedback-list .feedback-title
+{
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 16px;
     line-height: 18px;
 
     color: #fff;
 }
 
-.main-footer .footer-feedback-list a
+.footer-feedback-list a
 {
-    font-family: 'Curpum';
+    font-family: 'Cuprum', Arial, sans-serif;
     font-size: 16px;
     line-height: 18px;
 
     color: #ffd180;
 }
 
-.main-footer .footer-feedback-list a:hover,
-.main-footer .footer-feedback-list a:focus
+.footer-feedback-list a:hover,
+.footer-feedback-list a:focus
 {
     text-decoration: underline;
 }
 
-.main-footer .footer-feedback-list a:active
+.footer-feedback-list a:active
 {
     color: #ee3643;
 }
+
+/* MODALS */
+.modal-yandexmap,
+.modal-feedback
+{
+    display: none;
+}
+
+/* MODAL - YANDEX MAP */
+
+
+/* MODAL - FEEDBACK */
