@@ -503,7 +503,7 @@ a
 .section-catalog-popular .catalog-list .catalog-last-price,
 .section-catalog-popular .catalog-list .catalog-price
 {
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', 'Times New Roman', sans-serif;
     font-weight: bold;
 }
 
@@ -560,7 +560,7 @@ a
 /* SECTION - SERVICES */
 .section-services
 {
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', 'Times New Roman', sans-serif;
     font-size: 13px;
     line-height: 24px;
 
@@ -606,7 +606,7 @@ a
 
 .services-description-list .services-description
 {
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', 'Times New Roman', sans-serif;
     font-size: 13px;
     line-height: 24px;
 }
@@ -623,7 +623,7 @@ a
 /* SECTION - ABOUT */
 .section-about
 {
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', 'Times New Roman', sans-serif;
     font-size: 13px;
     line-height: 24px;
 }
