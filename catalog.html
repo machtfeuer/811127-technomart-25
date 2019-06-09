@@ -9,46 +9,52 @@
   <body>
     <!-- Main header of all site pages -->
     <header class="main-header">
-        <nav class="main-navigation">
-            <a href="#"><img class="header-logo" src="img/logo.svg" width="108" height="18" alt="Техномарт - магазин строительных товаров"></a>
+        <div class="user-navigation-block">
+            <div class="container">
+                <a href="#"><img class="header-logo" src="img/logo.svg" width="108" height="18" alt="Техномарт - магазин строительных товаров"></a>
 
-            <form action="/search" method="get">
-                <label class="visually-hidden">Поиск:</label>
-                <input type="text" class="icon-search" name="search-field" placeholder="Поиск" value="">
-            </form>
+                <form action="/search" method="get">
+                    <label class="visually-hidden">Поиск:</label>
+                    <input type="text" class="icon-search" name="search-field" placeholder="Поиск" value="">
+                </form>
 
-            <ul class="main-navigation-list">
-                <li class="main-navigation-item"><a class="btn btn-favorite" href="#">Закладки: 0</a></li>
-                <li class="main-navigation-item"><a class="btn btn-basket" href="#">Корзина: 0</a></li>
-                <li class="main-navigation-item"><a class="btn btn-checkout" href="#">Оформить заказ</a></li>
-            </ul>
-            <!-- /.main-navigation-list -->
-        </nav>
-        <!-- /.main-navigation -->
- 
-        <div class="container">
-            <h1 class="website-headline">Интернет-магазин строительных материалов</h1>
-
-            <div class="header-contacts">
-                <a class="btn btn-call" href="tel:+78125550505">+7 (812) 555-05-05</a>
-                <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-            </div>
-            <!-- /.header-contacts -->
-
-            <nav class="profile-area">
-                <p class="icon-profile">Равшан Джамшутович <a class="icon-logout" href="#">Выход</a></p>
-
-                <ul class="profile-navigation">
-                    <li><a href="#">Мои заказы</a></li>
-                    <li><a href="#">Личный кабинет</a></li>
+                <ul class="navigation-list">
+                    <li class="navigation-item"><a class="button button-favorite" href="#">Закладки: 0</a></li>
+                    <li class="navigation-item"><a class="button button-basket" href="#">Корзина: 0</a></li>
+                    <li class="navigation-item"><a class="button button-checkout" href="#">Оформить заказ</a></li>
                 </ul>
-            </nav>
-            <!-- /.profile-area -->
+                <!-- /.navigation-list -->
+            </div>
+            <!-- /.container -->
         </div>
-        <!-- /.container -->
+        <!-- /.user-navigation-block -->
+        
+        <div class="header-content-block">
+            <div class="container">
+                <h1 class="website-headline">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
 
-        <nav class="site-navigation">
-            <ul class="site-navigation-list">
+                <div class="header-contacts">
+                    <a class="button button-call" href="tel:+78125550505">+7 (812) 555-05-05</a>
+                    <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+                </div>
+                <!-- /.header-contacts -->
+
+                <nav class="profile-area">
+                    <p class="icon-profile">Равшан Джамшутович <a class="icon-logout" href="#">Выход</a></p>
+
+                    <ul class="profile-navigation">
+                        <li><a href="#">Мои заказы</a></li>
+                        <li><a href="#">Личный кабинет</a></li>
+                    </ul>
+                </nav>
+                <!-- /.profile-area -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.header-content-block -->
+
+        <nav class="main-navigation">
+            <ul class="navigation-list">
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="#">Компания</a></li>
                 <li><a href="#">Каталог</a></li>
@@ -57,9 +63,9 @@
                 <li><a href="#">Доставка</a></li>
                 <li><a href="#">Клиентам</a></li>
             </ul>
-            <!-- /.site-navigation-list -->
+            <!-- /.navigation-list -->
         </nav>
-        <!-- /.site-navigation -->
+        <!-- /.main-navigation -->
     </header>
     <!-- /.main-header -->
 
@@ -147,7 +153,7 @@
                 </fieldset>
                 <!-- /.filter-partition -->
 
-                <input type="submit" class="btn" value="ПОКАЗАТЬ">
+                <input type="submit" class="button" value="ПОКАЗАТЬ">
             </form>
         </section>
         <!-- /.catalog-filter -->
@@ -203,8 +209,8 @@
 
                     <div class="catalog-popup">
                         <ul class="popup-buttons-list">
-                            <li><button type="button" class="btn btn-green icon-basket">КУПИТЬ</button></li>
-                            <li><button type="button" class="btn btn-border-green">В ЗАКЛАДКИ</button></li>
+                            <li><button type="button" class="button button-green icon-basket">КУПИТЬ</button></li>
+                            <li><button type="button" class="button button-outline-green">В ЗАКЛАДКИ</button></li>
                         </ul>
                     </div>
                 </li>
@@ -224,8 +230,8 @@
 
                     <div class="catalog-popup">
                         <ul class="popup-buttons-list">
-                            <li><button type="button" class="btn btn-green icon-basket">КУПИТЬ</button></li>
-                            <li><button type="button" class="btn btn-border-green">В ЗАКЛАДКИ</button></li>
+                            <li><button type="button" class="button button-green icon-basket">КУПИТЬ</button></li>
+                            <li><button type="button" class="button button-outline-green">В ЗАКЛАДКИ</button></li>
                         </ul>
                     </div>
                 </li>
@@ -242,8 +248,8 @@
 
                     <div class="catalog-popup">
                         <ul class="popup-buttons-list">
-                            <li><button type="button" class="btn btn-green icon-basket">КУПИТЬ</button></li>
-                            <li><button type="button" class="btn btn-border-green">В ЗАКЛАДКИ</button></li>
+                            <li><button type="button" class="button button-green icon-basket">КУПИТЬ</button></li>
+                            <li><button type="button" class="button button-outline-green">В ЗАКЛАДКИ</button></li>
                         </ul>
                     </div>
                 </li>
@@ -263,8 +269,8 @@
 
                     <div class="catalog-popup">
                         <ul class="popup-buttons-list">
-                            <li><button type="button" class="btn btn-green icon-basket">КУПИТЬ</button></li>
-                            <li><button type="button" class="btn btn-border-green">В ЗАКЛАДКИ</button></li>
+                            <li><button type="button" class="button button-green icon-basket">КУПИТЬ</button></li>
+                            <li><button type="button" class="button button-outline-green">В ЗАКЛАДКИ</button></li>
                         </ul>
                     </div>
                 </li>
@@ -284,8 +290,8 @@
 
                     <div class="catalog-popup">
                         <ul class="popup-buttons-list">
-                            <li><button type="button" class="btn btn-green icon-basket">КУПИТЬ</button></li>
-                            <li><button type="button" class="btn btn-border-green">В ЗАКЛАДКИ</button></li>
+                            <li><button type="button" class="button button-green icon-basket">КУПИТЬ</button></li>
+                            <li><button type="button" class="button button-outline-green">В ЗАКЛАДКИ</button></li>
                         </ul>
                     </div>
                 </li>
@@ -302,8 +308,8 @@
 
                     <div class="catalog-popup">
                         <ul class="popup-buttons-list">
-                            <li><button type="button" class="btn btn-green icon-basket">КУПИТЬ</button></li>
-                            <li><button type="button" class="btn btn-border-green">В ЗАКЛАДКИ</button></li>
+                            <li><button type="button" class="button button-green icon-basket">КУПИТЬ</button></li>
+                            <li><button type="button" class="button button-outline-green">В ЗАКЛАДКИ</button></li>
                         </ul>
                     </div>
                 </li>
@@ -323,8 +329,8 @@
 
                     <div class="catalog-popup">
                         <ul class="popup-buttons-list">
-                            <li><button type="button" class="btn btn-green icon-basket">КУПИТЬ</button></li>
-                            <li><button type="button" class="btn btn-border-green">В ЗАКЛАДКИ</button></li>
+                            <li><button type="button" class="button button-green icon-basket">КУПИТЬ</button></li>
+                            <li><button type="button" class="button button-outline-green">В ЗАКЛАДКИ</button></li>
                         </ul>
                     </div>
                 </li>
@@ -344,8 +350,8 @@
 
                     <div class="catalog-popup">
                         <ul class="popup-buttons-list">
-                            <li><button type="button" class="btn btn-green icon-basket">КУПИТЬ</button></li>
-                            <li><button type="button" class="btn btn-border-green">В ЗАКЛАДКИ</button></li>
+                            <li><button type="button" class="button button-green icon-basket">КУПИТЬ</button></li>
+                            <li><button type="button" class="button button-outline-green">В ЗАКЛАДКИ</button></li>
                         </ul>
                     </div>
                 </li>
@@ -362,8 +368,8 @@
                     
                     <div class="catalog-popup">
                         <ul class="popup-buttons-list">
-                            <li><button type="button" class="btn btn-green icon-basket">КУПИТЬ</button></li>
-                            <li><button type="button" class="btn btn-border-green">В ЗАКЛАДКИ</button></li>
+                            <li><button type="button" class="button button-green icon-basket">КУПИТЬ</button></li>
+                            <li><button type="button" class="button button-outline-green">В ЗАКЛАДКИ</button></li>
                         </ul>
                     </div>
                 </li>
@@ -372,26 +378,26 @@
 
             <ol class="paginator-list">
                 <li class="paginator-item active">
-                    <a href="#" class="btn btn-red" aria-label="Открыть 1 страницу каталога "></a>
+                    <a href="#" class="button button-red" aria-label="Открыть 1 страницу каталога"></a>
                 </li>
 
                 <li class="paginator-item active">
-                    <a href="#" class="btn btn-red" aria-label="Открыть 2 страницу каталога "></a>
+                    <a href="#" class="button button-red" aria-label="Открыть 2 страницу каталога"></a>
                 </li>
 
                 <li class="paginator-item active">
-                    <a href="#" class="btn btn-red" aria-label="Открыть 3 страницу каталога "></a>
+                    <a href="#" class="button button-red" aria-label="Открыть 3 страницу каталога"></a>
                 </li>
 
                 <li class="paginator-item">
-                    <a href="#" class="btnclass="btn btn-green icon-basket">">Следующая</a>
+                    <a href="#" class="button button-green icon-basket">Следующая</a>
                 </li>
             </ol>
             <!-- /.paginator-list -->
         </section>
         <!-- /.section-catalog -->
 
-        <section class="section-about bg-gray">
+        <section class="landing-section section-description">
             <header class="section-header">
                 <h2 class="section-headline uppercase">Пара слов о перфораторах</h2>
             </header>
@@ -400,15 +406,16 @@
             <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
 Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
         </section>
-        <!-- /.sectiona-about -->
+        <!-- /.section-description -->
     </main>
     <!-- /.container -->
+
 
     <!-- Main footer of all site pages -->
     <footer class="main-footer">
         <div class="container">
             <div class="half-width">
-                <a href="#"><img class="header-logo" src="img/logo.svg" width="108" height="18" alt="Техномарт - магазин строительных товаров"></a>
+                <a href="#"><img class="header-logo" src="img/logo.png" width="220" height="47" alt="Техномарт - магазин строительных товаров"></a>
 
                 <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
                 <p>+7 (812) 555-05-55</p>
@@ -416,23 +423,23 @@
             <!-- /.half-width -->
 
             <div class="half-width">
-                <nav class="site-navigation site-navigation-footer">
-                    <ul class="main-navigation-list">
-                        <li><a href="#">Компания</a></li>
-                        <li><a href="#">Новости</a></li>
-                        <li><a href="#">Каталог</a></li>
-                        <li><a href="#">Доставка</a></li>
-                        <li><a href="#">Контакты</a></li>
+                <nav class="footer-navigation">
+                    <ul class="footer-navigation-top">
+                        <li class="navigation-item"><a href="#">Компания</a></li>
+                        <li class="navigation-item"><a href="#">Новости</a></li>
+                        <li class="navigation-item"><a href="#">Каталог</a></li>
+                        <li class="navigation-item"><a href="#">Доставка</a></li>
+                        <li class="navigation-item"><a href="#">Контакты</a></li>
                     </ul>
 
-                    <ul class="site-navigation-footer-bottom-list">
-                        <li><a href="#">Матераилы</a></li>
-                        <li><a href="#">Техника</a></li>
-                        <li><a href="#">Инструмент</a></li>
-                        <li><a href="#">Спецпредложения</a></li>
+                    <ul class="footer-navigation-bottom">
+                        <li class="navigation-item"><a href="#">Матераилы</a></li>
+                        <li class="navigation-item"><a href="#">Техника</a></li>
+                        <li class="navigation-item"><a href="#">Инструмент</a></li>
+                        <li class="navigation-item"><a href="#">Спецпредложения</a></li>
                     </ul>
                 </nav>
-                <!-- /.footer-site-navigation -->
+                <!-- /.footer-navigation -->
             </div>
             <!-- /.half-width -->
         </div>
@@ -446,21 +453,21 @@
             </section>
             <!-- /.footer-copyright -->
 
-            <section class="social footer-social">
+            <section class="footer-social">
                 <h2 class="visually-hidden">Ссылки на социальные сети</h2>
-                <ul>
-                    <li><a class="social-link ico-vk" href="#" aria-label="Ссылка на страницу Техномарта в ВКонтакте"></a></li>
-                    <li><a class="social-link ico-fb" href="#" aria-label="Ссылка на страницу Техномарта в Facebook"></a></li>
-                    <li><a class="social-link ico-instagram" href="#" aria-label="Ссылка на страницу Техномарта в Insagram"></a></li>
+                <ul class="social-list">
+                    <li class="social-item"><a class="social-link ico-vk" href="#" aria-label="Ссылка на страницу Техномарта в ВКонтакте"></a></li>
+                    <li class="social-item"><a class="social-link ico-fb" href="#" aria-label="Ссылка на страницу Техномарта в Facebook"></a></li>
+                    <li class="social-item"><a class="social-link ico-instagram" href="#" aria-label="Ссылка на страницу Техномарта в Insagram"></a></li>
                 </ul>
             </section>
-            <!-- /.footer-social-netwroks -->
+            <!-- /.footer-social -->
 
-            <section class="footer-feedback-list">
+            <section class="footer-feedback">
                 <h2 class="visually-hidden">Обратная связь с разработчиками и администорами магазина ТЕХНОМАРТ</h2>
-                <ul>
+                <ul class="footer-feedback-list">
                     <li>
-                        <h3 class="feedback-title">Обратая связь:</h3>
+                        <h3 class="feedback-title">Обратная связь:</h3>
                         <p><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
                     </li>
 
@@ -470,7 +477,7 @@
                     </li>
                 </ul>
             </section>
-            <!-- /.footer-feedback-list -->
+            <!-- /.footer-feedback -->
         </div>
         <!-- /.container -->
     </footer>
@@ -479,10 +486,10 @@
     <div class="modal-cart-add">
         <h2 class="icon-cart-add">Товар добавлен в корзину!</h2>
         <p class="half-width">
-            <a class="btn btn-red" href="#">Оформить заказ</a>
+            <a class="button button-red" href="#">Оформить заказ</a>
         </p>
         <p class="half-width">
-            <button type="button" class="btnclass="btn btn-green icon-basket">">Продолжить покупки</button>
+            <button type="button" class="button button-green icon-basket">Продолжить покупки</button>
         </p>
     </div>
     <!-- /.modal-cart-add -->

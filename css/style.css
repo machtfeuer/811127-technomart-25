@@ -644,6 +644,11 @@ a
     font-family: 'Cuprum', 'Arial', sans-serif;
 }
 
+/* SECTION - DESCRIPTION CATALOG SECTION  */
+.section-description {
+    background-color: #f2f6f8;
+}
+
 /* MAIN FOOTER */
 .main-footer
 {
