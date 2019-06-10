@@ -115,13 +115,13 @@
                             <label>
                                 <input type="checkbox" name="manufacturer-field" value="interskol"> ИНТЕРСКОЛ
                             </label>
-                        </li class="filter-item">
+                        </li>
 
                         <li class="filter-item">
                             <label>
                                 <input type="checkbox" name="manufacturer-field" value="makita"> MAKITA
                             </label>
-                        </li class="filter-item">
+                        </li>
 
                         <li class="filter-item">
                             <label>
@@ -490,13 +490,17 @@
     <!-- /.main-footer -->
 
     <div class="modal-cart-add">
-        <h2 class="icon-cart-add">Товар добавлен в корзину!</h2>
-        <p class="half-width">
-            <a class="button button-red" href="#">Оформить заказ</a>
-        </p>
-        <p class="half-width">
-            <button type="button" class="button button-green icon-basket">Продолжить покупки</button>
-        </p>
+        <header class="modal-header">
+            <h2 class="modal-headline icon-cart-add">Товар добавлен в корзину!</h2>
+        </header>
+        <!-- /.modal-header -->
+
+        <div class="modal-buttons">
+            <a class="button button-red uppercase" href="#">Оформить заказ</a>
+
+            <button type="button" class="button button-white uppercase">Продолжить покупки</button>
+        </div>
+        <!-- /.modal-buttons -->
     </div>
     <!-- /.modal-cart-add -->
   </body>

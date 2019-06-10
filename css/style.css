@@ -934,10 +934,36 @@ a
 .modal-yandexmap,
 .modal-feedback
 {
-    display: none;
 }
 
+/* MODAL MAIN */
 /* MODAL - YANDEX MAP */
 
 
 /* MODAL - FEEDBACK */
+.modal-feedback label {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.modal-feedback .button {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+/* MODAL - CART ADD */
+.modal-cart-add .modal-headline {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    color: #000;
+    font-weight: normal;
+}
+
+.modal-cart-add .button {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+}
