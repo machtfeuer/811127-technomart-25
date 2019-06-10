@@ -124,11 +124,13 @@ a
 }
 
 .button-white:hover,
-.button-white:focus {
+.button-white:focus
+{
     color: #ee3643;
 }
 
-.button-white:active {
+.button-white:active
+{
     color: #c5c5c5;
 }
 
@@ -187,6 +189,23 @@ a
 {
     color: #c1c6ce;
     border-color: #c1c6ce;
+}
+
+.button-outline-gray,
+.button-outline-gray:visited {
+    background-color: #fff;
+    border-color: #e5e5e5;
+    border-style: solid;
+}
+
+.button-outline-gray:hover,
+.button-outline-gray:focus {
+    border-color: #bdc6ca;
+}
+
+.button-outline-gray:active {
+    color: #000;
+    border-color: #ee3643;
 }
 
 /* PAGE - BUTTONS - TYPES */
@@ -352,8 +371,8 @@ a
 {
     font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 14px;
-    line-height: 24px;
     font-style: normal;
+    line-height: 24px;
 
     color: #32425c;
 }
@@ -377,6 +396,12 @@ a
     line-height: 30px;
 
     color: #32425c;
+}
+
+/* (CATALOG) HEADLINE BACKGROUND COLORS */
+.headline-gray
+{
+    background-color: #f2f6f8;
 }
 
 /* SECTION - FEATURES */
@@ -481,8 +506,144 @@ a
     line-height: 24px;
 }
 
+/* (CATALOG) BREADCUMPS OF PAGES */
+.breadcumps
+{
+    margin: 0;
+    padding: 0;
 
-/* SECTION - CATALOG POPULAR */
+    list-style: none;
+}
+
+.breadcumps a
+{
+    font-family: 'PT Sans', 'Times New Roman', sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+
+    color: #000;
+}
+
+/* (CATALOG) CATALOG FILTER */
+.catalog-filter h3
+{
+    font-family: 'PT Sans', 'Times New Roman', sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+
+    background-color: #f7f3ec;
+}
+
+.catalog-filter legend
+{
+    font-family: 'PT Sans', 'Times New Roman', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.catalog-filter .filter-list
+{
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.catalog-filter .filter-item
+{
+    font-family: 'PT Sans', 'Times New Roman', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.catalog-filter .button {
+    font-family: "PT Sans", "Times New Roman", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+/* (CATALOG) CATALOG SORT */
+.catalog-sorting-section
+{
+    background-color: #f7f3ec;
+}
+
+.catalog-sorting-section h2
+{
+    font-family: 'PT Sans', 'Times New Roman', sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+}
+
+.catalog-sorting-section .sort-list
+{
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.catalog-sorting-section a,
+.catalog-sorting-section a:visited
+{
+    font-family: 'PT Sans', 'Times New Roman', sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+
+    text-decoration: underline;
+
+    color: #cacaca;
+
+    text-decoration-color: red;
+    text-decoration-style: dotted;
+}
+
+.catalog-sorting-section a:hover,
+.catalog-sorting-section a:focus
+{
+    color: #000;
+
+    text-decoration-style: solid;
+}
+
+.catalog-sorting-section a:active
+{
+    text-decoration: none;
+
+    color: #ee3643;
+}
+
+.catalog-sorting-section .sort-list-priority
+{
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+/* (CATALOG) PAGINATOR */
+.paginator-list {
+    list-style: none;
+    padding: none;
+    margin: none;
+}
+
+.paginator-item .button {
+    font-family: "PT Sans", "Times New Roman", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.paginator-item .button.active {
+    background-color: #ee3643;
+    border-color: #ee3643;
+    color: #fff;
+}
+
+/* SECTION - CATALOG */
 .section-catalog .section-header
 {
     background-color: #f9f5f0;
@@ -524,7 +685,11 @@ a
     font-size: 17px;
     line-height: 18px;
 
-    color: #a9a9a9;;
+    text-decoration: underline;
+
+    color: #a9a9a9;
+
+    text-decoration-line: line-through;;
 }
 
 .section-catalog .catalog-price
@@ -645,7 +810,8 @@ a
 }
 
 /* SECTION - DESCRIPTION CATALOG SECTION  */
-.section-description {
+.section-description
+{
     background-color: #f2f6f8;
 }
 
